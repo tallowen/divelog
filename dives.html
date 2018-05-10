@@ -1,0 +1,6 @@
+{% for dive in site.data.dives %}
+  <div>
+  	<h4>{{ dive.location }}</h4>
+  	{% if dive.site %}<h5>{{ dive.site }}</h5>{{% endif %}}
+  <div>
+{% endfor %}
